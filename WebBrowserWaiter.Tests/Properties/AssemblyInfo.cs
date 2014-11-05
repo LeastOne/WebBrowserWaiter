@@ -18,7 +18,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("WebBrowserWaiter")]
 [assembly: AssemblyProduct("WebBrowserWaiter.Tests")]
-[assembly: AssemblyCopyright("Copyright ©  2014 WebBrowserWaiter. All rights reserved.")]
+[assembly: AssemblyCopyright("Copyright © 2014 WebBrowserWaiter. All rights reserved.")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

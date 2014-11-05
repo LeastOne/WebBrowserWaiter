@@ -14,11 +14,11 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("WebBrowserWaiter")]
-[assembly: AssemblyDescription("A headless wrapper of the .NET WebBrowser.")]
+[assembly: AssemblyDescription("A headless wrapper of the .NET WebBrowser useful for automated browser testing, web crawling or screen scrapping and includes both HTML and JavaScript processing capabilities.")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("WebBrowserWaiter")]
 [assembly: AssemblyProduct("WebBrowserWaiter")]
-[assembly: AssemblyCopyright("Copyright ©  2014 WebBrowserWaiter. All rights reserved.")]
+[assembly: AssemblyCopyright("Copyright © 2014 WebBrowserWaiter. All rights reserved.")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
