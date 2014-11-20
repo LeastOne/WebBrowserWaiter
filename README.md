@@ -3,7 +3,7 @@ WebBrowserWaiter
 
 Summary
 -------
-A headless wrapper of the .NET WebBrowser useful for automated browser testing, web crawling or screen scrapping and includes both HTML and JavaScript processing capabilities.
+A headless wrapper of the .NET WebBrowser useful in automated browser testing, or as web crawler or screen scrapper and includes both HTML and JavaScript processing capabilities.
 
 ### Installation
 ```
