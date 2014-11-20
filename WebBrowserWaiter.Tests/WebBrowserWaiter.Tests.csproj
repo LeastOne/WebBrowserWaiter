@@ -59,6 +59,9 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="..\AssemblyInfoShared.cs">
+      <Link>Properties\AssemblyInfoShared.cs</Link>
+    </Compile>
     <Compile Include="Infrastructure\Nancy\Bootstrapper.cs" />
     <Compile Include="Infrastructure\Nancy\Module.cs" />
     <Compile Include="Infrastructure\PortHelper.cs" />
