@@ -3,12 +3,12 @@ Build & Publish Instructions
 
 For help or more information concerning nuget builds see, [Creating and Publishing a Package](http://docs.nuget.org/docs/creating-packages/creating-and-publishing-a-package).
 
-# From the command line navigate to the WebBrowserWaiter project folder.
+1. From the command line navigate to the WebBrowserWaiter project folder.
 
-# Pack the project.
+2. Pack the project.
 
-    nuget pack WebBrowserWaiter.csproj -Prop Configuration=Release
+    `nuget pack WebBrowserWaiter.csproj -Prop Configuration=Release`
 
-# Push the package.
+3. Push the package.
 
-    nuget push WebBrowserWaiter.#.#.#.#.nupkg
+    `nuget push WebBrowserWaiter.#.#.#.#.nupkg`
