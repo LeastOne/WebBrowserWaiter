@@ -23,7 +23,7 @@ namespace WebBrowserWaiter
         /// <summary>
         /// The default wait.
         /// </summary>
-        private static TimeSpan defaultWait = TimeSpan.FromSeconds(2);
+        private static TimeSpan defaultWait = TimeSpan.FromSeconds(0);
 
         /// <summary>
         /// The signal.
