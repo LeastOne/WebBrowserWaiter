@@ -144,6 +144,51 @@ namespace WebBrowserWaiter.Tests
                 }
             }
 
+            /// <summary>
+            /// Assert setting cookies via JavaScript.
+            /// </summary>
+            [TestMethod]
+            public void CookieTest()
+            {
+                using (var waiter = new WebBrowserWaiter())
+                {
+                    var cookie = Guid.NewGuid().ToString();
+
+                    waiter.Await(
+                        p => p.Navigate(uri + "cookies"),
+                        p => {
+                            var function =
+                                @"(function() {{
+                                    document.cookie = 'cookie={0}; expires={1:R}; path=/';
+                                    document.getElementsByTagName('form')[0].submit();
+                                }})();";
+
+                            function = string.Format(
+                                function,
+                                cookie,
+                                DateTime.UtcNow.AddHours(1)
+                            );
+
+                            // ReSharper disable PossibleNullReferenceException
+                            var head = p.Document.GetElementsByTagName("head")[0];
+                            var script = p.Document.CreateElement("script");
+                            var element = script.DomElement as dynamic;
+                            element.text = function;
+                            head.AppendChild(script);
+                            // ReSharper restore PossibleNullReferenceException
+                        }
+                    );
+
+                    var text = waiter.Await(
+                        p => p.DocumentText
+                    );
+
+                    Assert.IsTrue(
+                        text.Contains(cookie)
+                    );
+                }
+            }
+
             #endregion
         }
     }

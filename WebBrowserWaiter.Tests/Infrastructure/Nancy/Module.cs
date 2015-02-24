@@ -31,6 +31,8 @@ namespace WebBrowserWaiter.Tests.Infrastructure.Nancy
             this.Get["/search"] = p => this.View["Search"];
 
             this.Get["/results"] = p => this.Request.Query.search;
+
+            this.Get["/cookies"] = p => this.View["Cookies", this.Request.Cookies];
         }
 
         #endregion
