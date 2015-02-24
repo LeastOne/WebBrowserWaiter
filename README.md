@@ -142,7 +142,7 @@ using (var waiter = new WebBrowserWaiter())
 
 Notes
 -----
-The change from v1.0.1.0 to 1.1.0.0 contained a semi-significant behavioural change. The default two second weight following a navigation was reduced to zero seconds. Originally this wait was added to account for situations where a navigation attempt resulted in a redirect (i.e. 302, 304, etc.) and would allow the browser time to complete the redirect before returning. However this caused all requests to be delayed two seconds before returning which was most often unnecessary. Since redirects are less common the default was changed to zero for the overall speed improvement. If your use of the WebBrowserWaiter is contingent upon redirects you can still implement a wait of your own as the following examples demonstrate.
+The change from v1.0.1.0 to 1.1.0.0 contained a semi-significant behavioural change. The default two second wait following a navigation was reduced to zero seconds. Originally this wait was added to account for situations where a navigation attempt resulted in a redirect (i.e. 302, 304, etc.) and would allow the browser time to complete the redirect before returning. However this caused all requests to be delayed two seconds before returning which was most often unnecessary. Since redirects are less common the default was changed to zero for the overall speed improvement. If your use of the WebBrowserWaiter is contingent upon redirects you can still implement a wait of your own as the following examples demonstrate.
 
 ```csharp
 using (var waiter = new WebBrowserWaiter())
