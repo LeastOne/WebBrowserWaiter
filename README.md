@@ -167,6 +167,9 @@ using (var waiter = new WebBrowserWaiter())
 Troubleshooting
 ---------------
 
+### System.Windows.Form
+You need to reference the `System.Windows.Forms` DLL in order to use `WebBrowserWaiter`.
+
 ### See Warnings
 Before doing anything be sure you've read and understand the warnings.
 
